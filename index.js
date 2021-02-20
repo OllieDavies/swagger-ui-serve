@@ -13,7 +13,7 @@ const options = commandLineArgs(optionDefinitions)
 const port = options.port || 3000;
 const app = express();
 
-app.use('/', swaggerUi.serve, swaggerUi.setup(require(options.specification)));
+app.use('/', swaggerUi.serve, swaggerUi.setup(require(`${process.cwd()}/${options.specification}`)));
 app.listen(port, function () {
     console.info(`Swagger listening at http://localhost:${port}`);
     open(`http://localhost:${port}`);
