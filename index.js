@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const express = require("express");
 const swaggerUi = require("swagger-ui-express");
 const open = require("open");
