@@ -1,13 +1,20 @@
 const express = require("express");
 const swaggerUi = require("swagger-ui-express");
 const open = require("open");
-const argv = require("minimist")(process.argv.slice(2));
+const commandLineArgs = require('command-line-args')
 
-const port = argv.port || 3000;
+const optionDefinitions = [
+    { name: 'port', alias: 'p', type: Number },
+    { name: 'specification', alias: "s", type: String, defaultOption: true }
+]
+
+const options = commandLineArgs(optionDefinitions)
+
+const port = options.port || 3000;
 const app = express();
 
-app.use('/', swaggerUi.serve, swaggerUi.setup(require(argv.spec)));
-app.listen(port, function(){
+app.use('/', swaggerUi.serve, swaggerUi.setup(require(options.specification)));
+app.listen(port, function () {
     console.info(`Swagger listening at http://localhost:${port}`);
     open(`http://localhost:${port}`);
 });

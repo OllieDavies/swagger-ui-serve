@@ -1,18 +1,20 @@
 {
   "name": "swagger-ui-serve",
   "version": "0.0.1",
-  "description": "",
+  "description": "Pass in a JSON specification to Swagger UI direct from the command-line",
   "main": "index.js",
-  "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
+  "bin": "index.js",
+  "author": "Ollie Davies",
   "license": "ISC",
   "dependencies": {
+    "command-line-args": "^5.1.1",
     "express": "^4.17.1",
-    "minimist": "^1.2.5",
     "open": "^7.3.0",
     "swagger-ui-express": "^4.1.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OllieDavies/swagger-ui-serve"
+  },
+  "homepage": "https://github.com/OllieDavies/swagger-ui-serve"
 }
