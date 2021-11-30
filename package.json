@@ -16,5 +16,6 @@
     "type": "git",
     "url": "https://github.com/OllieDavies/swagger-ui-serve"
   },
-  "homepage": "https://github.com/OllieDavies/swagger-ui-serve"
+  "homepage": "https://github.com/OllieDavies/swagger-ui-serve",
+  "keywords": ["swagger", "swagger ui", "json", "cli", "openapi"]
 }
