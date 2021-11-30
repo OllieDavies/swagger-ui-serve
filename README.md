@@ -1,4 +1,8 @@
 # swagger-ui-serve
+
+[![npm version](https://badge.fury.io/js/swagger-ui-serve.svg)](https://www.npmjs.com/package/swagger-ui-serve)
+[![Downloads](https://img.shields.io/npm/dm/swagger-ui-serve.svg)](https://www.npmjs.com/package/swagger-ui-serve)
+
 Launches Swagger UI with the passed Open API Specification pre-loaded.
 
 
